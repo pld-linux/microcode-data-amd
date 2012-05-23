@@ -26,13 +26,13 @@ definitions for AMD64 processor families 10h, 11h, 12h, 14h, and 15h.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/lib/firmware
-install microcode_amd.bin $RPM_BUILD_ROOT/lib/firmware
-install microcode_amd_fam15h.bin $RPM_BUILD_ROOT/lib/firmware
+install -d $RPM_BUILD_ROOT/lib/firmware/amd-ucode
+install microcode_amd.bin $RPM_BUILD_ROOT/lib/firmware/amd-ucode
+install microcode_amd_fam15h.bin $RPM_BUILD_ROOT/lib/firmware/amd-ucode
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(640,root,root) /lib/firmware/microcode*.bin
+%attr(640,root,root) /lib/firmware/amd-ucode/microcode*.bin
