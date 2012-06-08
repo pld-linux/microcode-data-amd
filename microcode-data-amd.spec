@@ -3,7 +3,7 @@
 Summary:	Microcode definitions for AMD64 processors
 Name:		microcode-data-amd
 Version:	%{_spec_snap}
-Release:	1
+Release:	2
 License:	AMD SOFTWARE LICENSE AGREEMENT
 Group:		Base
 # http://www.amd64.org/index.php?id=50&file=amd-ucode-2012-01-17.tar
@@ -11,7 +11,7 @@ Source0:	amd-ucode-%{_dash_snap}.tar
 # Source0-md5:	c0eabb7e25e1f9045b7dd5ceabfddd09
 URL:		http://www.amd64.org/support/microcode.html
 Provides:	microcode-data
-ExclusiveArch:	%{x8664}
+ExclusiveArch:	i686 %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # nothing to put there
