@@ -1,15 +1,15 @@
-%define		dash_snap	2012-01-17
+%define		dash_snap	2012-09-10
 %define		spec_snap	%(echo %{dash_snap} | sed -e 's/-//g')
 Summary:	Microcode definitions for AMD64 processors
 Summary(pl.UTF-8):	Definicje mikrokodu dla procesorów AMD64
 Name:		microcode-data-amd
 Version:	%{spec_snap}
-Release:	2
+Release:	1
 License:	AMD SOFTWARE LICENSE AGREEMENT
 Group:		Base
-# http://www.amd64.org/index.php?id=50&file=amd-ucode-2012-01-17.tar
+# http://www.amd64.org/index.php?id=50&file=amd-ucode-2012-09-10.tar
 Source0:	amd-ucode-%{dash_snap}.tar
-# Source0-md5:	c0eabb7e25e1f9045b7dd5ceabfddd09
+# Source0-md5:	559bc355d3799538584add80df2996f0
 URL:		http://www.amd64.org/support/microcode.html
 Provides:	microcode-data
 ExclusiveArch:	i686 %{x8664}
