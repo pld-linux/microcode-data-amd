@@ -42,4 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %dir /lib/firmware/amd-ucode
-%attr(644,root,root) /lib/firmware/amd-ucode/microcode*.bin
+%attr(644,root,root) /lib/firmware/amd-ucode/microcode_amd.bin
+%attr(644,root,root) /lib/firmware/amd-ucode/microcode_amd_fam15h.bin
