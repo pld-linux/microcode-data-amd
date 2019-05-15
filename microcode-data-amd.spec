@@ -39,10 +39,11 @@ i 17h.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/lib/firmware/amd-ucode
-install %{SOURCE0} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
-install %{SOURCE1} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
-install %{SOURCE2} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
-install %{SOURCE3} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
+
+cp -p %{SOURCE0} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
+cp -p %{SOURCE1} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
+cp -p %{SOURCE2} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
+cp -p %{SOURCE3} $RPM_BUILD_ROOT/lib/firmware/amd-ucode
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %dir /lib/firmware/amd-ucode
-%attr(644,root,root) /lib/firmware/amd-ucode/microcode_amd.bin
-%attr(644,root,root) /lib/firmware/amd-ucode/microcode_amd_fam15h.bin
-%attr(644,root,root) /lib/firmware/amd-ucode/microcode_amd_fam16h.bin
-%attr(644,root,root) /lib/firmware/amd-ucode/microcode_amd_fam17h.bin
+/lib/firmware/amd-ucode/microcode_amd.bin
+/lib/firmware/amd-ucode/microcode_amd_fam15h.bin
+/lib/firmware/amd-ucode/microcode_amd_fam16h.bin
+/lib/firmware/amd-ucode/microcode_amd_fam17h.bin
