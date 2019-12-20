@@ -1,4 +1,4 @@
-%define		dash_snap	2019-05-14
+%define		dash_snap	2019-12-20
 %define		spec_snap	%(echo %{dash_snap} | sed -e 's/-//g')
 Summary:	Microcode definitions for AMD64 processors
 Summary(pl.UTF-8):	Definicje mikrokodu dla procesorów AMD64
@@ -14,7 +14,7 @@ Source1:	http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Source2:	http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/plain/amd-ucode/microcode_amd_fam16h.bin
 # Source2-md5:	6a47a6393c52ddfc0b5b044efc076a77
 Source3:	http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/plain/amd-ucode/microcode_amd_fam17h.bin
-# Source3-md5:	fef89be989f6a160b340027a24cd0a16
+# Source3-md5:	60f18b6d7fa3d1231b27cc339c173c8c
 URL:		http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Provides:	microcode-data
 ExclusiveArch:	i686 %{x8664}
