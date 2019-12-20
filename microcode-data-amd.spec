@@ -17,7 +17,7 @@ Source3:	http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 # Source3-md5:	60f18b6d7fa3d1231b27cc339c173c8c
 URL:		http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Provides:	microcode-data
-ExclusiveArch:	i686 athlon %{x8664}
+ExclusiveArch:	i686 athlon x86_64 amd64 x32
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # nothing to put there
