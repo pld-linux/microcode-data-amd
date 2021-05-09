@@ -1,10 +1,11 @@
+# NOTE: currently it's included in linux-firmware.spec
 %define		dash_snap	2019-12-20
 %define		spec_snap	%(echo %{dash_snap} | sed -e 's/-//g')
 Summary:	Microcode definitions for AMD64 processors
 Summary(pl.UTF-8):	Definicje mikrokodu dla procesorów AMD64
 Name:		microcode-data-amd
 Version:	%{spec_snap}
-Release:	1
+Release:	1.1
 License:	AMD SOFTWARE LICENSE AGREEMENT
 Group:		Base
 Source0:	http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/plain/amd-ucode/microcode_amd.bin
